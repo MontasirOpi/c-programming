@@ -4,15 +4,16 @@
 #include<stdio.h>
 int main()
 {
-    int total,n;
+    double total,n;
     printf("Enter total number:");
-    scanf("%d",&total);
+    scanf("%lf",&total);
     printf("Enter number:");
-    scanf("%d",&n);
-    if((n*100/total)>=60)
+    scanf("%lf",&n);
+    if(((n/total)*100)>=60)
         printf("1000tk");
-    else if((n*100/total)<60)
+    else if(((n/total)*100)<60)
         printf("500tk");
     return 0;
 
 }
+
